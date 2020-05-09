@@ -1,0 +1,55 @@
+#N canvas 701 199 856 773 10;
+#X obj 56 29 adc~;
+#X obj 63 654 dac~;
+#X obj 66 190 pitchshift;
+#X floatatom 151 147 5 0 0 0 - - -;
+#X floatatom 151 170 5 0 0 0 - - -;
+#X obj 88 121 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X floatatom 89 148 5 0 0 0 - - -;
+#X text 190 146 Transpose;
+#X text 190 170 Delay;
+#X obj 56 415 delay1;
+#X obj 74 361 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X floatatom 73 391 5 0 0 0 - - -;
+#X floatatom 117 418 5 0 0 0 - - -;
+#X obj 126 389 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 55 523 reverb1;
+#X text 265 390 Feedback;
+#X obj 141 473 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 7600 1;
+#X floatatom 149 498 5 0 0 0 - - -;
+#X obj 143 517 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 3700 1;
+#X floatatom 151 542 5 0 0 0 - - -;
+#X text 281 471 Room Size;
+#X text 283 516 Damping;
+#X obj 99 449 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 7400 1;
+#X floatatom 88 472 5 0 0 0 - - -;
+#X obj 69 294 harmonizer;
+#X obj 130 242 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X connect 0 0 2 0;
+#X connect 2 0 24 0;
+#X connect 3 0 2 3;
+#X connect 4 0 2 2;
+#X connect 5 0 2 1;
+#X connect 5 0 6 0;
+#X connect 9 0 14 0;
+#X connect 10 0 9 1;
+#X connect 10 0 11 0;
+#X connect 13 0 9 2;
+#X connect 13 0 12 0;
+#X connect 14 0 1 0;
+#X connect 14 0 1 1;
+#X connect 16 0 14 3;
+#X connect 16 0 17 0;
+#X connect 18 0 19 0;
+#X connect 18 0 14 2;
+#X connect 22 0 23 0;
+#X connect 22 0 14 1;
+#X connect 24 0 9 0;
+#X connect 25 0 24 1;

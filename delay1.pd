@@ -1,0 +1,17 @@
+#N canvas 790 252 958 966 10;
+#X obj 231 212 inlet~;
+#X obj 177 493 outlet~;
+#X obj 323 352 *~;
+#X obj 381 308 inlet;
+#X obj 176 465 drywet;
+#X obj 293 451 inlet;
+#X obj 231 404 delread~ Delay1 150;
+#X obj 233 286 delwrite~ Delay1 500;
+#X connect 0 0 4 0;
+#X connect 0 0 7 0;
+#X connect 2 0 7 0;
+#X connect 3 0 2 1;
+#X connect 4 0 1 0;
+#X connect 5 0 4 2;
+#X connect 6 0 2 0;
+#X connect 6 0 4 1;
